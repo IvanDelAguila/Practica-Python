@@ -129,4 +129,6 @@ botonIgual.grid(row=5, column=3)
 botonSuma=Button(miFrame, text="+", width=3, command=lambda:suma(numeroPantalla.get()))
 botonSuma.grid(row=5, column=4)
 # ESto es un comentario de prueba.
+
+# Esto es otro comentario de prueba.
 miFrame.mainloop()
