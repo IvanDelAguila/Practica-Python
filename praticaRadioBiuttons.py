@@ -24,6 +24,7 @@ Radiobutton(root, text="Femenino", variable=varOpcion, value=2, command=imprimir
 
 
 
+
 etiqueta=Label(root)
 etiqueta.pack()
 
