@@ -5,21 +5,21 @@ root=Tk()
 root.title("Ejemplo")
 
 playa=IntVar()
-montagna=IntVar()
+montaña=IntVar()
 turismo=IntVar()
 
-def opcionesViaje()
+def opcionesViaje():
 
     opcionEscogida=""
 
     if (playa.get()==1):
         opcionEscogida+="playa"
 
-    if (montagna.get()==1):
-        opcionEscogida+="montaña"
+    if (montaña.get()==1):
+        opcionEscogida+="Montaña"
         
     if (turismo.get()==1):
-        opcionEscogida+="turismo"    
+        opcionEscogida+="Turismo"    
 
     textoFinal.config(text=opcionEscogida)
 
@@ -31,9 +31,9 @@ frame.pack()
 
 Label(frame, text="Elige Destinos", width=50).pack()
 
-Checkbutton(frame, text="Playa").pack()
-Checkbutton(frame, text="Montaña").pack()
-Checkbutton(frame, text="Turismo").pack()
+Checkbutton(frame, text="Playa", variable=playa, onvalue=1, offvalue=0, command=opcionesViaje).pack()
+Checkbutton(frame, text="Montaña", variable=montaña, onvalue=1, offvalue=0, command=opcionesViaje).pack()
+Checkbutton(frame, text="Turismo", variable=turismo, onvalue=1, offvalue=0, command=opcionesViaje).pack()
 
 textoFinal=Label(frame)
 textoFinal.pack()
