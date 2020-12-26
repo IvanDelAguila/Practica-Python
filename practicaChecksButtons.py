@@ -8,7 +8,7 @@ playa=IntVar()
 montaña=IntVar()
 turismo=IntVar()
 
-def opcionesViaje():
+def opcionesViaje():def opcionesViaje()0:
 
     opcionEscogida=""
 
@@ -19,7 +19,7 @@ def opcionesViaje():
         opcionEscogida+="Montaña"
         
     if (turismo.get()==1):
-        opcionEscogida+="Turismo"    
+        opcionEscogida+="Turismo"   
 
     textoFinal.config(text=opcionEscogida)
 
